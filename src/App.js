@@ -22,6 +22,13 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import store from "./store";
 import { Provider } from "react-redux";
+import { createRequire } from 'module';
+import { createRequire } from 'module';
+
+var require = createRequire(import.meta.url);
+var module = { exports: {} };
+
+const require = createRequire(import.meta.url);
 
 function App() {
   return (
